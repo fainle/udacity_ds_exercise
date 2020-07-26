@@ -1,13 +1,13 @@
 digraph Tree {
 node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
 edge [fontname=helvetica] ;
-0 [label=<X<SUB>1</SUB> &le; 0.827<br/>gini = 0.444<br/>samples = 96<br/>value = [32, 64]<br/>class = Yes>, fillcolor="#9ccef2"] ;
-1 [label=<X<SUB>0</SUB> &le; 0.198<br/>gini = 0.486<br/>samples = 77<br/>value = [32, 45]<br/>class = Yes>, fillcolor="#c6e3f7"] ;
+0 [label=<X<SUB>0</SUB> &le; 0.198<br/>gini = 0.444<br/>samples = 96<br/>value = [32, 64]<br/>class = Yes>, fillcolor="#9ccef2"] ;
+1 [label=<gini = 0.0<br/>samples = 19<br/>value = [0, 19]<br/>class = Yes>, fillcolor="#399de5"] ;
 0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
-2 [label=<gini = 0.0<br/>samples = 15<br/>value = [0, 15]<br/>class = Yes>, fillcolor="#399de5"] ;
-1 -> 2 ;
+2 [label=<X<SUB>1</SUB> &le; 0.827<br/>gini = 0.486<br/>samples = 77<br/>value = [32, 45]<br/>class = Yes>, fillcolor="#c6e3f7"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
 3 [label=<X<SUB>1</SUB> &le; 0.442<br/>gini = 0.499<br/>samples = 62<br/>value = [32, 30]<br/>class = No>, fillcolor="#fdf7f3"] ;
-1 -> 3 ;
+2 -> 3 ;
 4 [label=<X<SUB>0</SUB> &le; 0.599<br/>gini = 0.4<br/>samples = 29<br/>value = [8, 21]<br/>class = Yes>, fillcolor="#84c2ef"] ;
 3 -> 4 ;
 5 [label=<gini = 0.0<br/>samples = 13<br/>value = [0, 13]<br/>class = Yes>, fillcolor="#399de5"] ;
@@ -18,7 +18,7 @@ edge [fontname=helvetica] ;
 6 -> 7 ;
 8 [label=<X<SUB>0</SUB> &le; 0.815<br/>gini = 0.198<br/>samples = 9<br/>value = [1, 8]<br/>class = Yes>, fillcolor="#52a9e8"] ;
 6 -> 8 ;
-9 [label=<X<SUB>1</SUB> &le; 0.228<br/>gini = 0.5<br/>samples = 2<br/>value = [1, 1]<br/>class = No>, fillcolor="#ffffff"] ;
+9 [label=<X<SUB>0</SUB> &le; 0.768<br/>gini = 0.5<br/>samples = 2<br/>value = [1, 1]<br/>class = No>, fillcolor="#ffffff"] ;
 8 -> 9 ;
 10 [label=<gini = 0.0<br/>samples = 1<br/>value = [0, 1]<br/>class = Yes>, fillcolor="#399de5"] ;
 9 -> 10 ;
@@ -40,6 +40,6 @@ edge [fontname=helvetica] ;
 17 -> 18 ;
 19 [label=<gini = 0.0<br/>samples = 2<br/>value = [0, 2]<br/>class = Yes>, fillcolor="#399de5"] ;
 17 -> 19 ;
-20 [label=<gini = 0.0<br/>samples = 19<br/>value = [0, 19]<br/>class = Yes>, fillcolor="#399de5"] ;
-0 -> 20 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+20 [label=<gini = 0.0<br/>samples = 15<br/>value = [0, 15]<br/>class = Yes>, fillcolor="#399de5"] ;
+2 -> 20 ;
 }
